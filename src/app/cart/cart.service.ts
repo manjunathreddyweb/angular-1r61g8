@@ -23,7 +23,7 @@ addToCart(product) {
    getShippingPrices() {
     return this.http.get('/assets/shipping.json');
   }
-  constructor() { }
+  constructor(private http : HttpClient ) { }
 
 
 }
